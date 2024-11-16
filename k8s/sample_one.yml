@@ -1,0 +1,49 @@
+# comments - ignored by k8s
+
+# simple key values
+key: value
+name: rahul
+city: warangal
+age: 25
+
+# incorrect key values
+name:rahul
+
+
+# Dictionary / map
+trainer:
+  name: rahul
+  city: warangal
+  age: 25
+student:
+  name: netha
+  city: hyd
+  age: 23
+
+
+ #incorrect Dictionary / map
+trainer:
+name: rahul
+city: warangal
+age: 25 
+
+# lists / arrays
+courses:
+- aws
+- azure
+- devops
+
+# Example for k8s pod representation
+institute: svs
+infrastructure:
+  floors: 5
+  classrooms: 25
+courses:
+  aws:
+  - student_name: rahul
+    student_age: 25
+    student_contacts:
+    - personal: 9390
+    - house: 890900
+    - brother: 98989
+  

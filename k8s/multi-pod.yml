@@ -1,16 +1,16 @@
 # create nginx pod
 apiVersion: v1
-kind: pod
+kind: Pod
 metadata:
-  name: nginx_pod
+  name: multi-pod-works
 spec:
   containers:
   - name: nginx1
     image: nginx
     ports:
-    - containerport: 80
-  containers:
-  - name: nginx2
-    image: nginx
+    - containerPort: 80
+
+  - name: node-api
+    image: ravi2krishna/nodejs-api
     ports:
-    - containerport: 80
+    - containerPort: 8080

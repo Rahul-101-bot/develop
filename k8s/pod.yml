@@ -1,5 +1,5 @@
 # create nginx pod
-apiversion: v1
+apiVersion: v1
 kind: pod
 metadata:
   name: nginx_pod
